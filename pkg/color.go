@@ -12,12 +12,13 @@ var Colors = map[string]string{
 	"gray":    "\033[37m",
 	"white":   "\033[97m",
 }
+var Reset = "\033[0m"
 
 func DisplayText(color string, text string) {
 	if _, ok := Colors[color]; !ok {
 		panic("Color not found")
 	}
 
-	fmt.Printf("%s%s", Colors[color], text)
+	fmt.Printf("%s%s%s", Colors[color], text, Reset)
 
 }
