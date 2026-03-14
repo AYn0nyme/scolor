@@ -10,22 +10,22 @@ type color struct {
 }
 
 var Colors = map[string]string{
-	"red":          "\033[31m",
-	"green":        "\033[32m",
-	"yellow":       "\033[33m",
-	"blue":         "\033[34m",
-	"magenta":      "\033[35m",
-	"cyan":         "\033[36m",
-	"gray":         "\033[37m",
-	"white":        "\033[97m",
-	"lightred":     "\033[1;31m",
-	"lightgreen":   "\033[1;32m",
-	"lightyellow":  "\033[1;33m",
-	"lightblue":    "\033[1;34m",
-	"lightmagenta": "\033[1;35m",
-	"lightcyan":    "\033[1;36m",
-	"lightgray":    "\033[1;37m",
-	"lightwhite":   "\033[1;97m",
+	"red":         "\033[31m",
+	"green":       "\033[32m",
+	"yellow":      "\033[33m",
+	"blue":        "\033[34m",
+	"magenta":     "\033[35m",
+	"cyan":        "\033[36m",
+	"gray":        "\033[37m",
+	"white":       "\033[97m",
+	"boldred":     "\033[1;31m",
+	"boldgreen":   "\033[1;32m",
+	"boldyellow":  "\033[1;33m",
+	"boldblue":    "\033[1;34m",
+	"boldmagenta": "\033[1;35m",
+	"boldcyan":    "\033[1;36m",
+	"boldgray":    "\033[1;37m",
+	"boldwhite":   "\033[1;97m",
 }
 
 var Red = color{"red"}
@@ -36,14 +36,14 @@ var Magenta = color{"magenta"}
 var Cyan = color{"cyan"}
 var Gray = color{"gray"}
 var White = color{"white"}
-var LightRed = color{"lightred"}
-var LightGreen = color{"lightgreen"}
-var LightYellow = color{"lightyellow"}
-var LightBlue = color{"lightblue"}
-var LightMagenta = color{"lightmagenta"}
-var LightCyan = color{"lightcyan"}
-var LightGray = color{"lightgray"}
-var LightWhite = color{"lightwhite"}
+var BoldRed = color{"Boldred"}
+var BoldGreen = color{"Boldgreen"}
+var BoldYellow = color{"Boldyellow"}
+var BoldBlue = color{"Boldblue"}
+var BoldMagenta = color{"Boldmagenta"}
+var BoldCyan = color{"Boldcyan"}
+var BoldGray = color{"Boldgray"}
+var BoldWhite = color{"Boldwhite"}
 var Reset = "\033[0m"
 
 func DisplayText(color string, text ...string) {
