@@ -36,5 +36,5 @@ func DisplayText(color string, text string) {
 }
 
 func (c color) DisplayText(text string) {
-	fmt.Printf("%s%s%s ", c, text, Reset)
+	fmt.Printf("%s%s%s ", c.Color, text, Reset)
 }
