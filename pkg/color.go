@@ -59,7 +59,3 @@ func DisplayText(color string, text ...string) {
 func (c color) DisplayText(text ...string) {
 	fmt.Printf("%s%s%s", Colors[c.Color], text, Reset)
 }
-
-func ColorList() map[string]string {
-	return Colors
-}

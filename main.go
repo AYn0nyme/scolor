@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	scolor "github.com/SnowsSky/scolor/pkg"
 ) // import the color file
 
@@ -14,7 +12,4 @@ func main() {
 
 	// or if you want, you can print with scolor.White.DisplayText(text); text is a ...string.
 	scolor.White.DisplayText("A simple go color printing library")
-
-	// list all colors available
-	fmt.Println(scolor.ColorList())
 }
