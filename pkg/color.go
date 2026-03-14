@@ -51,11 +51,14 @@ func DisplayText(color string, text ...string) {
 	if _, ok := Colors[color]; !ok {
 		panic("Color not found")
 	}
-
-	fmt.Printf("%s%s%s", Colors[color], text, Reset)
+	for _, word := range text {
+		fmt.Printf("%s%s%s", Colors[color], word, Reset)
+	}
 
 }
 
 func (c color) DisplayText(text ...string) {
-	fmt.Printf("%s%s%s", Colors[c.Color], text, Reset)
+	for _, word := range text {
+		fmt.Printf("%s%s%s ", Colors[c.Color], word, Reset)
+	}
 }
