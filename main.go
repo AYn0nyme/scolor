@@ -12,7 +12,9 @@ func main() {
 	scolor.DisplayText("boldyellow", " scolors\n") // Same, '\n' are not done automatically.
 
 	// Or if you want, you can print with scolor.White.DisplayText(text);
-	scolor.White.DisplayText("A simple go color printing library.\n")
+	scolor.White.DisplayText("A simple go color ")
+	// Since scolor 1.1.0, you can now use scolor.White.DisplayTextln() to do "\n" automatically
+	scolor.White.DisplayTextln("printing library.") // or scolor.DisplayTextln("white", "printing library.")
 	// Don't use scolor.Reset.DisplayText(text); Because it will do nothing.
 
 	// Since text is a ...string, you can also do
